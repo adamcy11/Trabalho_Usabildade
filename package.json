@@ -23,5 +23,5 @@
     "sqlite": "^4.2.0",
     "sqlite3": "^5.1.6"
   },
-  "type":"module"
+  "type": "module"
 }

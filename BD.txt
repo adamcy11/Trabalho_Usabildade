@@ -1,0 +1,25 @@
+CREATE TABLE Review 
+( 
+ idGame INT,  
+ idUser INT,  
+ review VARCHAR(n) NOT NULL,  
+ nickname VARCHAR(n),  
+ star INT,  
+); 
+
+CREATE TABLE Game 
+( 
+ idGame INT PRIMARY KEY AUTO_INCREMENT,  
+ nameGame VARCHAR(n) NOT NULL,  
+ descGame VARCHAR(n),  
+); 
+
+CREATE TABLE User 
+( 
+ idUser INT PRIMARY KEY AUTO_INCREMENT,  
+ nickname VARCHAR(n) NOT NULL,  
+ password VARCHAR(n) NOT NULL,  
+); 
+
+ALTER TABLE Review ADD FOREIGN KEY(idGame) REFERENCES Game (idGame)
+ALTER TABLE Review ADD FOREIGN KEY(idUser) REFERENCES User (idUser)
