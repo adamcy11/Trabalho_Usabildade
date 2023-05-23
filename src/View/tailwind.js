@@ -4,8 +4,10 @@ tailwind.config = {
       colors: {
         clifford: '#da373d',
         dark: '#1F1F20',
+        gray: '#2A303C',
         purple: '#B718EF',
-        gray: '#3B3B3C',
+        purpledark: '#3B0350',
+        bluedark: '#03124F',
       },
       backgroundImage: {
         'loginBgImg': "url('./img/background_login.jpeg')",
@@ -15,3 +17,5 @@ tailwind.config = {
 }
 
 
+  
+  
