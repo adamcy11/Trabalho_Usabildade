@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/js" href="./crud.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.js"></script>
     <link rel="stylesheet"
@@ -51,7 +52,7 @@
     </div>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark mx-auto min-w-max top-0">
     <div class="pt-28"></div>
     <div class="ml-6 flex items-center md:ml-6">
         <a href="main.html"><button><span
@@ -60,8 +61,73 @@
         </a>
     </div>
 
-    <a href="teste.html"> <button class="bg-purple rounded-md px-8 py-1 my-3 mt-5">Teste</button>
-    </a>
+    <div class="container mx-auto px-4 pb-12 text-white">
+        <section class="flex flex-wrap">
+          <div class="w-full md:w-3/3">
+            <div class="clearfix">
+              <img src="img/lol.png" alt="Game Image" class="w-1/2 md:w-96 h-64 float-left mr-4 pt-4">
+              <div class="text-justify text-base">
+                <h1 class="text-3xl mb-4">Título da resenha do LOL</h1>
+                <p>Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...</p>
+                <p>Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...</p>
+                <p>Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...Conteúdo da resenha... Conteúdo da resenha...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      
+
+    <!-- Formulário para adicionar um novo comentário -->
+    <section class="comment-section text-white">
+        <div class="flex items-start ">
+            <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+            <div class="flex-grow px-2">
+                <textarea class="w-full rounded-md p-2 text-black bg-gray2 text-white" rows="1" placeholder="Adicionar comentário..."></textarea>
+                <button class="bg-purpledark hover:bg-blue-900 text-white px-2 py-2 rounded-md mt-2 bottom-0.5">Comentar</button>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="flex items-start space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+              <div class="relative flex-grow">
+                <div class="bg-gray-100 rounded-md p-2">
+                  <h4 class="font-bold">Username1</h4>
+                  <p>Um comentário qualquer...</p>
+                </div>
+                <div class="absolute right-0 hidden">
+                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
+                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="mt-4">
+            <div class="flex items-start space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+              <div class="relative flex-grow">
+                <div class="bg-gray-100 rounded-md p-2">
+                  <h4 class="font-bold">Username2</h4>
+                  <p>Um comentário qualquer...</p>
+                </div>
+                <div class="absolute right-0 hidden">
+                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
+                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+    </section>
+    </div>
+    </div>
 
 </body>
 
