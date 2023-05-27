@@ -72,15 +72,20 @@ export async function selectUserLogin(req, res){
     const query = 'SELECT * FROM User WHERE nickname=? AND senha=? ';
     const user = req.body;
     
-
-            openDb().then(db=>{
-                db.get(query, [user.nickname , user.senha], (err, row)=>{
-                    if(err){
-                        res.json({
-                            "statusCode":400,
-                            "msg":"Erro no login"
-                        }) 
-                    } 
-                })
-        });
+    try{
+        openDb().then(db=>{
+            db.run(query, [user.nickname , user.senha], (err, row)=>{
+                if(err){
+                    res.json({
+                        "statusCode":400,
+                        "msg":"Erro no login"
+                    }) 
+                } 
+            })
+         });
+    } catch (err) {
+        // Capturar exceção em caso de erro na execução da consulta
+        console.error('Erro ao executar a consulta:', err);
+      }
+            
     }
