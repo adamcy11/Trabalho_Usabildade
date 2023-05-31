@@ -1,14 +1,20 @@
-document.getElementById('loginForm').addEventListener('submit', function (event) {
-    event.preventDefault();
+const URLBASE = "http://127.0.0.1:3000";
+
+  let login = () =>{
+    let nickname = document.getElementById('nickname').value;
+    let senha = document.getElementById('senha').value;
   
-    const nickname = document.getElementById('nickname').value;
-    const senha = document.getElementById('senha').value;
-  
-    fetch('/login', { method: 'POST', headers: {'Content-Type': 'application/json', }, body: JSON.stringify({nickname, senha}),
+    fetch(URLBASE+'/login', { 
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      body: JSON.stringify({
+        "nickname": nickname,
+        "senha": senha
+      }),
     }).then((res) => {
         if (res.ok) {
           // Login bem-sucedido
-          window.location.href = 'main.html';
+          window.location.href = './main.html';
         } else if (res.status === 401) {
           // Credenciais inválidas
           alert('Credenciais inválidas');
@@ -19,6 +25,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
       })
       .catch((error) => {
         console.error('Erro:', error);
-        alert('Ocorreu um erro na solicitação. Verifique a conexão com o servidor.');
+        alert(error);
         });
-        });
+        }
+      
