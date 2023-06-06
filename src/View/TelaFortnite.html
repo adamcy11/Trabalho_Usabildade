@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/js" href="./crud.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Main</title>
+
+    <div class="menu">
+        <div class="min-h-full">
+            <nav class="bg-gradient-to-r from-purpledark to-bluedark">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="flex h-16 items-center justify-between">
+                        <div class="flex items-center">
+                            <div class=" h-20 flex  flex-col text-white">
+                                <img src="img\logo.svg" class="left  w-24 h-24" alt="">
+                            </div>
+                            <div class="hidden md:block">
+                                <div class="ml-10 flex items-baseline space-x-4">
+                                    <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-lg font-medium"
+                                        aria-current="page">Gêneros</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-4 flex items-center md:ml-6">
+                                <button type="button">
+                                    <img class="h-14 w-14 rounded-full bg-white" src="img\perfil.png" alt="">
+                                </button>
+
+                                <div class="ml-6 flex items-center md:ml-6">
+                                    <a href="index.html"> <button
+                                            class="rounded-full bg-gray-800 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                            <span
+                                                class="material-symbols-outlined m-auto p-2 text-4xl">logout</span></button>
+                                    </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</head>
+
+<body class="bg-dark mx-auto min-w-max top-0">
+    <div class="pt-28"></div>
+    <div class="ml-6 flex items-center md:ml-6">
+        <a href="main.html"><button><span
+                    class="material-symbols-outlined m-auto p-2 text-white text-4xl">arrow_back</span>
+            </button>
+        </a>
+    </div>
+
+    <div class="container mx-auto px-4 pb-12 text-white">
+        <section class="flex flex-wrap">
+          <div class="w-full md:w-3/3">
+            <div class="clearfix">
+              <img src="img/fortnite.jpg" alt="Game Image" class="w-1/2 md:w-96 h-64 float-left mr-4 pt-4">
+              <div class="text-justify text-base">
+                <h1 class="text-3xl mb-4"><strong>Fortnite</strong></h1>
+                <div class="paragrafo">
+
+                <p>Fortnite é um jogo eletrônico de ação e sobrevivência desenvolvido pela Epic Games. Lançado em 2017, rapidamente se tornou um dos jogos mais populares em todo o mundo, cativando milhões de jogadores de todas as idades.<br> <strong>Melhor jogador atualmente é : Casella_br</strong></br></p>
+         <ul class="icone">                   
+     <li>
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/387_Xbox_logo-64.png" alt="">
+     </li>
+     <li>
+        <img src="https://cdn2.iconfinder.com/data/icons/custom-ios-14-1/60/Playstation-64.png" alt="">
+     </li>
+     <li>
+        <img src="https://cdn2.iconfinder.com/data/icons/gaming-92/48/Multiplayer-64.png" alt="">
+     </li>
+     <li>
+        <img src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/value-server-64.png" alt="">
+     </li>
+     <style>
+        .icone{
+            height: 150px;
+            list-style: none;
+            padding: 0;
+            display: flex; /* Aplica um layout flexível */
+            justify-content: left; /* Alinha os itens horizontalmente no centro */
+            align-items:center; /* Alinha os itens verticalmente no centro */
+    }
+
+        .icone li {
+            margin: 0 10px; /* Adiciona margem entre os itens */
+            max-width: 40px;
+        }
+     </style>
+                
+         </ul>      
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      
+
+    <!-- Formulário para adicionar um novo comentário -->
+    <section class="comment-section text-white">
+        <div class="flex items-start ">
+            <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+            <div class="flex-grow px-2">
+                <textarea class="w-full rounded-md p-2 text-black bg-gray2 text-white" rows="1" placeholder="Adicionar comentário..."></textarea>
+                <button class="bg-purpledark hover:bg-blue-900 text-white px-2 py-2 rounded-md mt-2 bottom-0.5">Comentar</button>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="flex items-start space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+              <div class="relative flex-grow">
+                <div class="bg-gray-100 rounded-md p-2">
+                  <h4 class="font-bold">Username1</h4>
+                  <p>Um comentário qualquer...</p>
+                </div>
+                <div class="absolute right-0 hidden">
+                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
+                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="mt-4">
+            <div class="flex items-start space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+              <div class="relative flex-grow">
+                <div class="bg-gray-100 rounded-md p-2">
+                  <h4 class="font-bold">Username2</h4>
+                  <p>Um comentário qualquer...</p>
+                </div>
+                <div class="absolute right-0 hidden">
+                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
+                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+    </section>
+    </div>
+    </div>
+
+</body>
+
+</html>

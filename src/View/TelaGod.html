@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/js" href="./crud.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Main</title>
+
+    <div class="menu">
+        <div class="min-h-full">
+            <nav class="bg-gradient-to-r from-purpledark to-bluedark">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="flex h-16 items-center justify-between">
+                        <div class="flex items-center">
+                            <div class=" h-20 flex  flex-col text-white">
+                                <img src="img\logo.svg" class="left  w-24 h-24" alt="">
+                            </div>
+                            <div class="hidden md:block">
+                                <div class="ml-10 flex items-baseline space-x-4">
+                                    <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-lg font-medium"
+                                        aria-current="page">Gêneros</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-4 flex items-center md:ml-6">
+                                <button type="button">
+                                    <img class="h-14 w-14 rounded-full bg-white" src="img\perfil.png" alt="">
+                                </button>
+
+                                <div class="ml-6 flex items-center md:ml-6">
+                                    <a href="index.html"> <button
+                                            class="rounded-full bg-gray-800 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                            <span
+                                                class="material-symbols-outlined m-auto p-2 text-4xl">logout</span></button>
+                                    </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</head>
+
+<body class="bg-dark mx-auto min-w-max top-0">
+    <div class="pt-28"></div>
+    <div class="ml-6 flex items-center md:ml-6">
+        <a href="main.html"><button><span
+                    class="material-symbols-outlined m-auto p-2 text-white text-4xl">arrow_back</span>
+            </button>
+        </a>
+    </div>
+
+    <div class="container mx-auto px-4 pb-12 text-white">
+        <section class="flex flex-wrap">
+          <div class="w-full md:w-3/3">
+            <div class="clearfix">
+              <img src="data:image/jpeg;base64,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" alt="Game Image" class="w-1/2 md:w-96 h-64 float-left mr-4 pt-4">
+              <div class="text-justify text-base">
+                <h1 class="text-3xl mb-4"><strong>God of War</strong></h1>
+                <div class="paragrafo">
+
+                <p>God of War é uma aclamada série de jogos eletrônicos de ação e aventura, desenvolvida pela Santa Monica Studio e publicada pela Sony Interactive Entertainment. A série teve seu início em 2005 e passou por várias iterações, mas vamos focar na descrição do jogo "God of War" lançado em 2018, que serve como um reinício da franquia.></p>
+         <ul class="icone">                   
+     <li>
+        <img src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/value-server-64.png" alt="">
+     </li>
+     <li>
+        <img src="https://cdn2.iconfinder.com/data/icons/custom-ios-14-1/60/Playstation-64.png" alt="">
+     </li>
+     <li>
+        <img src="https://cdn2.iconfinder.com/data/icons/gaming-92/48/Multiplayer-64.png" alt="">
+     </li>
+     <style>
+        .icone{
+            height: 150px;
+            list-style: none;
+            padding: 0;
+            display: flex; /* Aplica um layout flexível */
+            justify-content: left; /* Alinha os itens horizontalmente no centro */
+            align-items:center; /* Alinha os itens verticalmente no centro */
+    }
+
+        .icone li {
+            margin: 0 10px; /* Adiciona margem entre os itens */
+            max-width: 40px;
+        }
+     </style>
+                
+         </ul>      
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      
+
+    <!-- Formulário para adicionar um novo comentário -->
+    <section class="comment-section text-white">
+        <div class="flex items-start ">
+            <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+            <div class="flex-grow px-2">
+                <textarea class="w-full rounded-md p-2 text-black bg-gray2 text-white" rows="1" placeholder="Adicionar comentário..."></textarea>
+                <button class="bg-purpledark hover:bg-blue-900 text-white px-2 py-2 rounded-md mt-2 bottom-0.5">Comentar</button>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="flex items-start space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+              <div class="relative flex-grow">
+                <div class="bg-gray-100 rounded-md p-2">
+                  <h4 class="font-bold">Username1</h4>
+                  <p>Um comentário qualquer...</p>
+                </div>
+                <div class="absolute right-0 hidden">
+                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
+                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="mt-4">
+            <div class="flex items-start space-x-4">
+              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+              <div class="relative flex-grow">
+                <div class="bg-gray-100 rounded-md p-2">
+                  <h4 class="font-bold">Username2</h4>
+                  <p>Um comentário qualquer...</p>
+                </div>
+                <div class="absolute right-0 hidden">
+                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
+                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+    </section>
+    </div>
+    </div>
+
+</body>
+
+</html>
