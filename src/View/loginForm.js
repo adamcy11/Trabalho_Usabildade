@@ -24,7 +24,7 @@ const URLBASE = "http://127.0.0.1:3000";
         }
       })
       .catch((error) => {
-        console.error('Erro:', error);
+        console.error('Erro se conectar no banco de dados:', error);
         alert(error);
         });
         }
