@@ -14,7 +14,9 @@ const URLBASE = "http://127.0.0.1:3000";
     }).then((res) => {
         if (res.ok) {
           // Login bem-sucedido
-          window.location.href = './main.html';
+          window.location.href = './main.html'
+          
+
         } else if (res.status === 401) {
           // Credenciais inválidas
           alert('Credenciais inválidas');
@@ -24,8 +26,20 @@ const URLBASE = "http://127.0.0.1:3000";
         }
       })
       .catch((error) => {
-        console.error('Erro se conectar no banco de dados:', error);
+        console.error('Erro se conectar no banco de dados:');
         alert(error);
         });
         }
-      
+        /*
+        let getNick = () =>{
+          let nickname = document.getElementById('nickname').value;
+         
+          document.getElementById("nickname").innerHTML = 
+            `<li>
+                <span>${nickname}</span>
+            </li>`;
+          console.log(nickname)          
+
+        } */  
+        
+        

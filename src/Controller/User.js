@@ -1,6 +1,7 @@
 import { openDb } from '../configDB.js';
 
 
+
 //Cria a tabela User
 export async function createTable() {
 

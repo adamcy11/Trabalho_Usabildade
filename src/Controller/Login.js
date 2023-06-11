@@ -1,6 +1,8 @@
 import sqlite3 from 'sqlite3'
 
+
 let db = new sqlite3.Database('database.db');
+
 
 export async function login(req, res) {
 
@@ -24,11 +26,12 @@ export async function login(req, res) {
             })
         } else {
             res.status(200);
+            let verificador = true
             res.json({
                 "statusCode": 200,
                 "msg":"Login bem-sucedido"
             })
         }
     });
-
+            
 }
