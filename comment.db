@@ -1,3 +1,6 @@
-CREATE TABLE IF NOT EXISTS Review ( idGame INTEGER PRIMARY KEY, comment TEXT )
+CREATE TABLE IF NOT EXISTS Review ( idReview INTEGER PRIMARY KEY, idGame INTEGER, comment TEXT )
 
-INSERT INTO Review (comment) VALUES ('muito bom')
+
+INSERT INTO Review (idGame, comment)
+VALUES(001,'Achei interressante');
+

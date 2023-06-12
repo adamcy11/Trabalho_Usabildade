@@ -30,16 +30,6 @@ const URLBASE = "http://127.0.0.1:3000";
         alert(error);
         });
         }
-        /*
-        let getNick = () =>{
-          let nickname = document.getElementById('nickname').value;
-         
-          document.getElementById("nickname").innerHTML = 
-            `<li>
-                <span>${nickname}</span>
-            </li>`;
-          console.log(nickname)          
-
-        } */  
+        
         
         

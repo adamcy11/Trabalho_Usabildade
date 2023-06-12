@@ -23,9 +23,9 @@ export async function selectReviewAll(req, res) {
 }
 
 export async function selectReviewByGame(req, res){
-    let review = req.body;
+    let id = req.query.id;
     openDb().then(db=>{
-        db.all('SELECT * FROM Review WHERE idGame=?', [review.idGame])
+        db.all('SELECT * FROM Review WHERE idGame=?', [id])
         .then(review=> res.json(review) );
     });
 }
