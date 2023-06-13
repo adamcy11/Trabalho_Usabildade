@@ -20,4 +20,4 @@ A fim de deixarmos as páginas iterativas, utilizamos o JavaScript e prevemos ta
 
 - Creat - Cria e registra novos comentários nas resenhas.
 - Read - Acessa as resenhas com os comentários já registrados.
-- 
+- Delete - Deleta comentários das resenhas.
