@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.js"></script>
+    <script src="./acessoAdmin.js"></script>
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +34,9 @@
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-4 flex items-center md:ml-6">
-                                <button type="button">
-                                    <img class="h-14 w-14 rounded-full bg-white" src="img\perfil.png" alt="">
+                                
+                                <button onclick="acesso()" type="button" >
+                                 <a id="acessoAdmin" href="#" > <img class="h-14 w-14 rounded-full bg-white" src="img/perfil.png" alt="">  </a>                            
                                 </button>
 
                                 <div class="ml-6 flex items-center md:ml-6">

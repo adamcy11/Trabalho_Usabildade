@@ -1,7 +1,6 @@
 const URLBASE = "http://127.0.0.1:3000";
 
-let atualizar = true
-
+ 
 //Aqui temos uma innetHTML dentro de forEach mostrandos todos as reviews pelo id do jogo
 let getAllReview = () =>{
     let id= 1
@@ -10,9 +9,10 @@ let getAllReview = () =>{
     .then(res=>{
         document.getElementById("listAllReview").innerHTML = "";
         res.forEach(res => {
+          let img = "https://source.unsplash.com/50x50/?gamer"
             let line = `<div class="mt-4">
             <div class="flex items-start space-x-4">
-             <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full"> 
+             <img src=${img} alt="Avatar" class="w-12 h-12 rounded-full"> 
               <div class="relative flex-grow">
                 <div class="bg-gray-100 rounded-md p-2">
                         
