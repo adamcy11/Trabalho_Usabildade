@@ -1,6 +1,6 @@
 # Projeto A3 - Usabilidade, desenvolvimento web, mobile e jogos
 ### Professores: Gustavo Torres Custodio e José de Oliveira Malheiro Netto
-Esse será o repositório do trabalho A3
+Este é o repositório do trabalho A3
 Utilizando Node, Express e SQLite
 
 
