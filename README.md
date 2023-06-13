@@ -9,6 +9,7 @@ Utilizando Node, Express e SQLite
 * Arthur Adamcy de Souza - RA: 125111377918
 * Gabriel Guimarães Martins - RA: 125111363302
 * João Victor Nascimento de Lavor - RA: 125111364883
+* Tiago Massao dos Santos Konno - RA: 125111349921
 * Thiago Moura Casella - RA: 125111347861
 
 
@@ -21,4 +22,5 @@ A fim de deixarmos as páginas iterativas, utilizamos o JavaScript e prevemos ta
 
 - Creat - Cria e registra novos comentários nas resenhas.
 - Read - Acessa as resenhas com os comentários já registrados.
+- Update - Edita os comentários já registrados.
 - Delete - Deleta comentários das resenhas.
