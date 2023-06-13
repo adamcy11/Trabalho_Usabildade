@@ -1,9 +1,6 @@
 # Projeto A3 - Usabilidade, desenvolvimento web, mobile e jogos
 ### Professores: Gustavo Torres Custodio e José de Oliveira Malheiro Netto
 
-Utilizando Node, Express e SQLite.
-
-
 ## Integrantes 
 * Adelle Bueno Dantas - RA: 125111375971
 * Arthur Adamcy de Souza - RA: 125111377918
