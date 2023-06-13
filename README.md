@@ -1,7 +1,7 @@
 # Projeto A3 - Usabilidade, desenvolvimento web, mobile e jogos
 ### Professores: Gustavo Torres Custodio e José de Oliveira Malheiro Netto
-Este é o repositório do trabalho A3
-Utilizando Node, Express e SQLite
+
+Utilizando Node, Express e SQLite.
 
 
 ## Integrantes 
@@ -24,3 +24,12 @@ A fim de deixarmos as páginas iterativas, utilizamos o JavaScript e prevemos ta
 - Read - Acessa as resenhas com os comentários já registrados.
 - Update - Edita os comentários já registrados.
 - Delete - Deleta comentários das resenhas.
+
+### Tecnologias utilizadas
+- Node
+- Express
+- SQLite
+- JavaScript
+- HTML
+- CSS
+- Tailwind
