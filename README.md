@@ -9,6 +9,7 @@ Utilizando Node, Express e SQLite
 * Arthur Adamcy de Souza - RA: 125111377918
 * Gabriel Guimarães Martins - RA: 125111363302
 * João Victor Nascimento de Lavor - RA: 125111364883
+* Thiago Moura Casella - RA: 125111347861
 
 
 ## O projeto - Site de resenha de jogos
