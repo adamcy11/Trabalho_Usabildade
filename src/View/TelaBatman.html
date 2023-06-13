@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/js" href="./crud.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.js"></script>
+    <script src="./TelaBatman.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Main</title>
@@ -114,53 +115,22 @@
 
     <!-- Formulário para adicionar um novo comentário -->
     <section class="comment-section text-white">
-        <div class="flex items-start ">
-            <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
-            <div class="flex-grow px-2">
-                <textarea class="w-full rounded-md p-2 text-black bg-gray2 text-white" rows="1" placeholder="Adicionar comentário..."></textarea>
-                <button class="bg-purpledark hover:bg-blue-900 text-white px-2 py-2 rounded-md mt-2 bottom-0.5">Comentar</button>
-            </div>
-        </div>
+      <div class="flex items-start ">
+          <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
+          <div class="flex-grow px-2">
+              <textarea class="w-full rounded-md p-2 text-black bg-gray2 text-white" rows="1" placeholder="Adicionar comentário..." id="writtenReview" ></textarea>
+              <button class="bg-purpledark hover:bg-blue-900 text-white px-2 py-2 rounded-md mt-2 bottom-0.5" onclick="postRecord()" >Comentar</button>
+          </div>
+      </div>
 
-        <div class="mt-4">
-            <div class="flex items-start space-x-4">
-              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
-              <div class="relative flex-grow">
-                <div class="bg-gray-100 rounded-md p-2">
-                  <h4 class="font-bold">Username1</h4>
-                  <p>Um comentário qualquer...</p>
-                </div>
-                <div class="absolute right-0 hidden">
-                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
-                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
-                </div>
-              </div>
-            </div>
-          </div>
+      <ul id="listAllReview"></ul> 
+ 
+      </div>
+  </section>
+  </div>
+  </div>
           
-          
-          <div class="mt-4">
-            <div class="flex items-start space-x-4">
-              <img src="https://via.placeholder.com/50" alt="Avatar" class="w-12 h-12 rounded-full">
-              <div class="relative flex-grow">
-                <div class="bg-gray-100 rounded-md p-2">
-                  <h4 class="font-bold">Username2</h4>
-                  <p>Um comentário qualquer...</p>
-                </div>
-                <div class="absolute right-0 hidden">
-                  <button class="bg-gray-200 hover:bg-lightgray text-gray-800 px-2 py-1 rounded-md">Editar</button>
-                  <button class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-md">Deletar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          
-        </div>
-    </section>
-    </div>
-    </div>
+       
 
 </body>
 

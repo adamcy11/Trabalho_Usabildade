@@ -4,7 +4,7 @@ let atualizar = true
 
 //Aqui temos uma innetHTML dentro de forEach mostrandos todos as reviews pelo id do jogo
 let getAllReview = () =>{
-    let id= 1
+    let id= 6
     fetch(URLBASE +`/review?id=${id}`)
     .then(res=>res.json())
     .then(res=>{
@@ -35,7 +35,7 @@ let getAllReview = () =>{
 
 let postRecord = () =>{
     let comment = document.getElementById("writtenReview").value;
-    let id = 1
+    let id = 6
 
     fetch(URLBASE+`/review`, {
         method: 'POST',
