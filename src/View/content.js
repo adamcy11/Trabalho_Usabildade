@@ -9,7 +9,10 @@ let getAllReview = () =>{
     .then(res=>{
         document.getElementById("listAllReview").innerHTML = "";
         res.forEach(res => {
+          
           let img = "https://source.unsplash.com/50x50/?gamer"
+
+
             let line = `<div class="mt-4">
             <div class="flex items-start space-x-4">
              <img src=${img} alt="Avatar" class="w-12 h-12 rounded-full"> 

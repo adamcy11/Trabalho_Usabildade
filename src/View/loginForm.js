@@ -1,6 +1,7 @@
 const URLBASE = "http://127.0.0.1:3000";
 
   let login = () =>{
+    
     let nickname = document.getElementById('nickname').value;
     let senha = document.getElementById('senha').value;
   
@@ -27,7 +28,8 @@ const URLBASE = "http://127.0.0.1:3000";
       })
       .catch((error) => {
         console.error('Erro se conectar no banco de dados:');
-        alert(error);
+       
+        
         });
         }
         
