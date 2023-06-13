@@ -17,7 +17,7 @@ Atendendo aos requisitos do projeto, criamos elementos HTML, com folhas de estil
 
 A fim de deixarmos as páginas iterativas, utilizamos o JavaScript e prevemos também um backend completo, que possibilitou a entrega de três das operações do CRUD solicitadas. Foram elas:
 
-- Creat - Cria e registra novos comentários nas resenhas.
+- Create - Cria e registra novos comentários nas resenhas.
 - Read - Acessa as resenhas com os comentários já registrados.
 - Update - Edita os comentários já registrados.
 - Delete - Deleta comentários das resenhas.
